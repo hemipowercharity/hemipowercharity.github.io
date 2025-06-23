@@ -48,6 +48,12 @@ body {
     text-decoration: none;
 }
 
+.logo-img {
+    height: 40px;
+    max-width: 200px;
+    object-fit: contain;
+}
+
 .nav {
     display: flex;
     gap: 30px;
@@ -327,6 +333,29 @@ body {
 
 .footer p {
     opacity: 0.8;
+}
+
+.footer-funding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.nihr-logo {
+    height: 30px;
+    max-width: 200px;
+    object-fit: contain;
+}
+
+.footer-funding a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-funding a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design */
