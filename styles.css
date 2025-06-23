@@ -415,6 +415,22 @@ body {
     .contact-info {
         padding: 25px;
     }
+    
+    .logo-img {
+        height: 35px;
+        max-width: 150px;
+    }
+    
+    .footer-funding {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .nihr-logo {
+        height: 25px;
+        max-width: 150px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -442,5 +458,19 @@ body {
     
     .download-section h3 {
         font-size: 1.5rem;
+    }
+    
+    .logo-img {
+        height: 30px;
+        max-width: 120px;
+    }
+    
+    .nihr-logo {
+        height: 20px;
+        max-width: 120px;
+    }
+    
+    .hero-title {
+        line-height: 1.3;
     }
 }
