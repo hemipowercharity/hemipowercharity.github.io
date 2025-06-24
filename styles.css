@@ -332,6 +332,17 @@ body {
     line-height: 1.7;
 }
 
+/* Links */
+a {
+    color: #3d9c53;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
 /* Footer */
 .footer {
     background-color: #333;
