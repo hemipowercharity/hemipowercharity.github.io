@@ -27,11 +27,58 @@ body {
 .header {
     background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+}
+
+.announcement-banner {
+    background: linear-gradient(135deg, #f4b942 0%, #f0a81f 100%);
+    color: #1f2933;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.announcement-banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.announcement-banner-text {
+    display: grid;
+    gap: 8px;
+}
+
+.announcement-banner-text p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.announcement-banner-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.announcement-banner-link {
+    background-color: #ffffff;
+    color: #2d7a40;
+    border-color: #ffffff;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.announcement-banner-link:hover {
+    background-color: #f8f9fa;
+    color: #246334;
+    text-decoration: none;
 }
 
 .header .container {
@@ -74,7 +121,7 @@ body {
 .hero {
     background: linear-gradient(135deg, #4CAF50 0%, #3d9c53 50%, #2d7a40 100%);
     color: white;
-    padding: 160px 0 80px;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -142,6 +189,7 @@ body {
 /* Sections */
 .section {
     padding: 80px 0;
+    scroll-margin-top: 220px;
 }
 
 .section-alt {
@@ -386,6 +434,16 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .announcement-banner-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .announcement-banner-link {
+        width: 100%;
+    }
+
     .header .container {
         flex-direction: column;
         gap: 15px;
@@ -396,7 +454,7 @@ a:hover {
     }
     
     .hero {
-        padding: 140px 0 60px;
+        padding: 60px 0;
     }
     
     .hero-title {
@@ -420,6 +478,7 @@ a:hover {
     
     .section {
         padding: 60px 0;
+        scroll-margin-top: 320px;
     }
     
     .section-title {
@@ -463,6 +522,10 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+    .announcement-banner-text p {
+        font-size: 0.95rem;
+    }
+
     .container {
         padding: 0 15px;
     }
