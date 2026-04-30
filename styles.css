@@ -434,6 +434,10 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .header {
+        position: static;
+    }
+
     .announcement-banner-content {
         flex-direction: column;
         align-items: stretch;
@@ -478,7 +482,7 @@ a:hover {
     
     .section {
         padding: 60px 0;
-        scroll-margin-top: 320px;
+        scroll-margin-top: 24px;
     }
     
     .section-title {
